@@ -1,8 +1,8 @@
 - type: parallel
   steps:
-    - name: checkrb
+    - name: checkrbRuby
       service: demo
-      command: bundle exec ruby check.rb
+      command: bundle exec ruby Check.rb
     - name: test
       service: demo
       command: bundle exec ruby test.rb
